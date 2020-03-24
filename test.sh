@@ -21,3 +21,5 @@ mount "${DEVICE}"p2 mnt
 tar --xattrs -xpf "${AUTOBUILD_FILENAME}" -C mnt
 umount mnt
 rmdir mnt
+pwd
+find
