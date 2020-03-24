@@ -5,6 +5,7 @@ AUTOBUILD_FILE="$(curl -s http://gentoo.osuosl.org/releases/amd64/autobuilds/lat
 AUTOBUILD_DL="http://gentoo.osuosl.org/releases/amd64/autobuilds/${AUTOBUILD_FILE}"
 AUTOBUILD_FILENAME="$(echo $AUTOBUILD_FILE | xargs basename)"
 TEMPDIR="$(mktemp -d)"
+pwd
 cd "${TEMPDIR}"
 wget -nv "${AUTOBUILD_DL}"
 mkdir mnt
