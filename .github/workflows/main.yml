@@ -7,3 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: sudo sh test.sh
+    - uses: actions/upload-artifact@v1
+      with:
+        name: tests
+        path: image

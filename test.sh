@@ -19,3 +19,5 @@ mkfs.ext4 -m0 "${DEVICE}"p2
 e2label "${DEVICE}"p2 cloudimg-rootfs
 mount "${DEVICE}"p2 mnt
 tar --xattrs -xpf "${AUTOBUILD_FILENAME}" -C mnt
+umount mnt
+rmdir mnt
