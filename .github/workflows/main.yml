@@ -10,3 +10,4 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         path: image.bz2
+        name: image.bz2
