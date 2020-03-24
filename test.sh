@@ -1,3 +1,3 @@
 #!/bin/sh
 echo foo
-whoami
+sudo whoami
