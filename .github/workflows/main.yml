@@ -9,5 +9,4 @@ jobs:
     - run: sudo sh test.sh
     - uses: actions/upload-artifact@v1
       with:
-        name: tests
-        path: image
+        path: image.bz2

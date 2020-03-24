@@ -22,3 +22,5 @@ tar --xattrs -xpf "${AUTOBUILD_FILENAME}" -C mnt
 umount mnt
 rmdir mnt
 mv image $BASEDIR
+cd $BASEDIR
+bzip2 image
