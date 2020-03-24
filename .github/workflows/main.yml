@@ -6,4 +6,4 @@ jobs:
     name: A job to say hello
     steps:
     - uses: actions/checkout@master
-    - run: sh test.sh
+    - run: sudo sh test.sh
